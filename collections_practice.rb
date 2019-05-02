@@ -75,7 +75,7 @@ def remove_non_strings(array)
     school_hash.values.each do |location|
       location[location.values[0] = []]
       school_hash.each do |name, location|
-        locations[location.values[0]] << name
+        location[location.values[0]] << name
       end
     end
     locations
