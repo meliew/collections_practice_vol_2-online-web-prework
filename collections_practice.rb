@@ -47,6 +47,13 @@ def remove_non_strings(array)
   end
 
   def merge_data(keys, data)
+    merged = []
+    data.each do |info_hash|
+      info_hash.each do |name, data|
+        keys.each do |v|
+          merged << v.merge(data) if v.values[0] == name
+      end
+    end
 
   end
 
@@ -60,7 +67,6 @@ def remove_non_strings(array)
       location.each do |l, city|
         new_hash = [city]
       end
-
     end
   end
 
