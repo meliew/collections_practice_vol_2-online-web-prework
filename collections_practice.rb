@@ -74,7 +74,7 @@ def remove_non_strings(array)
       location = place[:location]
       if new_hash[location]
         new_hash[location] << school
-      else 
+      else
         new_hash[location] = []
         new_hash[location] << school
       end
