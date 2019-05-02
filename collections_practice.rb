@@ -43,7 +43,7 @@ def remove_non_strings(array)
     people.each do |name, number|
       output << {:name => name, :count => number}
     end
-    output 
+    output
   end
 
   def merge_data(keys, data)
