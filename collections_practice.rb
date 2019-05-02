@@ -55,6 +55,7 @@ def remove_non_strings(array)
         end
       end
     end
+    merged
   end
 
   def find_cool(hash)
