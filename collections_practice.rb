@@ -36,7 +36,7 @@ def remove_non_strings(array)
     array.each do |person|
       name = person[:name]
       people[:name] = people[:name] || 0
-      people[:name][:count] += 1
+      people[:name] += 1
     end
 
     ## {
