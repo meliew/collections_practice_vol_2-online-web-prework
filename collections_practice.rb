@@ -35,16 +35,15 @@ def remove_non_strings(array)
     people = {}
     array.each do |person|
       name = person[:name]
-      people[:name] = people[:name] || 0
+      people[:name] ||= 0
       people[:name] += 1
     end
-
-    ## {
-    ##    :todd => 0,
-    ##    :zeke => 3
-    ## }
-
-    ## [{:name => "todd", :count => 3}]
+    
+    output = []
+    people.each do |name, number|
+      output << {:name => name, :count => number}
+    end
+    output 
   end
 
   def merge_data(keys, data)
