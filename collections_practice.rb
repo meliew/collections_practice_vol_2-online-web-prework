@@ -68,19 +68,19 @@ def remove_non_strings(array)
       cool_hash
     end
 
-  def organize_schools(school_hash)
-    new_hash = {}
-    school_hash.each do |school, place|
-      location = place[:location]
-      if new_hash[location]
-        new_hash[location] << school
-      else
-        new_hash[location] = []
-        new_hash[location] << school
+    def organize_schools(school_hash)
+      new_hash = {}
+      school_hash.each do |school, place|
+        location = place[:location]
+        if new_hash[location]
+          new_hash[location] << school
+        else
+          new_hash[location] = []
+          new_hash[location] << school
+        end
       end
+      new_hash
     end
-    new_hash
-  end
 
 
 
