@@ -61,7 +61,7 @@ def remove_non_strings(array)
   def find_cool(hash)
     cool_hash = {}
     hash.each do |key, value|
-      if key == [:temperature] and value == [:cool]
+      if key == [:temperature] and value == ["cool"]
         cool_hash << [:temperature]
       end
       cool_hash
