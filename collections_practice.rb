@@ -32,8 +32,20 @@ def remove_non_strings(array)
   end
 
   def count_elements(array)
+    people = {}
+    array.each do |person|
+      name = person[:name]
+      people[:name] = people[:name] || 0
+      people[:name][:count] += 1
+    end
 
-end
+    ## {
+    ##    :todd => 0,
+    ##    :zeke => 3
+    ## }
+
+    ## [{:name => "todd", :count => 3}]
+  end
 
   def merge_data(keys, data)
 
@@ -45,13 +57,13 @@ end
 
   def organize_schools(school_hash)
     new_hash = {}
- school_hash.each do |name, location|
-   location.each do |l, city|
-     new_hash = [city]
-end
+    school_hash.each do |name, location|
+      location.each do |l, city|
+        new_hash = [city]
+      end
 
-end
-end
+    end
+  end
 
 
 
