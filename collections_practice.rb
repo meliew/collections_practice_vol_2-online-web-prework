@@ -64,6 +64,7 @@ def remove_non_strings(array)
       if key == [:temperature] and value == [:cool]
         cool_hash << [:temperature]
       end
+      cool_hash
     end
 
   end
