@@ -72,8 +72,9 @@ def remove_non_strings(array)
 
   def organize_schools(school_hash)
     new_hash = {}
-    school_hash.values.each do |location|
-      location.each do
+    school_hash.each do |key, value|
+      value.each do
+        if value == [:location]
         new_hash[:location]
       end
     end
