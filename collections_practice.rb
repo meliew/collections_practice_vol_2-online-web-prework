@@ -78,6 +78,7 @@ def remove_non_strings(array)
         new_hash[:location]
       end
     end
+    end
     new_hash
   end
 
