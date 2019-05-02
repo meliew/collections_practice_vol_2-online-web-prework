@@ -67,6 +67,7 @@ def remove_non_strings(array)
         cool_hash << [:temperature]["cool"]
       end
       end
+      end
       cool_hash
     end
   end
