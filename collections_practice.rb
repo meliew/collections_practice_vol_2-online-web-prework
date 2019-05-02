@@ -78,7 +78,7 @@ def remove_non_strings(array)
         location[location.values[0]] << name
       end
     end
-    locations
+    new_hash
   end
 
 
