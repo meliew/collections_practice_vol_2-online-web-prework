@@ -58,21 +58,19 @@ def remove_non_strings(array)
     merged
   end
 
-  def find_cool(hash)
+  def find_cool(array)
     cool_hash = []
-      hash.each do |key, value|
-        key.each do |name|
-          if name == [:temperature] && value == ["cool"]
-            cool_hash << [:temperature]["cool"]
+      array.each do |hash|
+      if hash[:temperature] == "cool"
+            cool_hash << hash
           end
         end
       cool_hash
     end
-  end
 
   def organize_schools(school_hash)
     new_hash = {}
-    
+
   end
 
 
