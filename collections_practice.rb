@@ -38,7 +38,7 @@ def remove_non_strings(array)
       people[:name] ||= 0
       people[:name] += 1
     end
-    
+
     output = []
     people.each do |name, number|
       output << {:name => name, :count => number}
