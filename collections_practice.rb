@@ -54,7 +54,7 @@ def remove_non_strings(array)
           merged << v.merge(data) if v.values[0] == name
       end
     end
-
+end
   end
 
   def find_cool(hash)
