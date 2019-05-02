@@ -52,9 +52,9 @@ def remove_non_strings(array)
       info_hash.each do |name, data|
         keys.each do |v|
           merged << v.merge(data) if v.values[0] == name
+        end
       end
     end
-end
   end
 
   def find_cool(hash)
